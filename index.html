@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Web Portal</title>
+    <link rel="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family:'Roboto', Arial, sans-serif;
+            line-height: 1.6;
+        }
+        
+        /* Header */
+       /* Header Layout */
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 50px;
+        border-bottom: 2px solid #eee;
+      }
+      .logo {
+        font-size: 32px;
+        font-weight: 700;
+      }
+  
+      .logo span {
+        color: #ff8c33; /* Orange for "Power" */
+      }
+  
+      /* Nav menu container */
+      .nav-links {
+        display: flex;
+        gap: 20px;
+        padding: 10px 25px;
+        border: 2px solid black;
+        border-radius: 30px;
+      }
+  
+      .nav-links a {
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+        padding: 8px 14px;
+        border-radius: 20px;
+      }
+  
+      .nav-links a:hover,
+      .nav-links a.active {
+        background-color: #ff8c33;
+        color: white;
+      }
+  
+      /* Contact button */
+      .contact-btn {
+        background-color: black;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+  
+      .contact-btn:hover {
+        background-color: #333;
+      }
+        
+        /* Main Section */
+        .main-content {
+            overflow: hidden;
+            padding: 40px 20px;
+            background-color:rgba(250, 249, 249, 0.925);
+        }
+        
+        .left-column {
+            float: right;
+            width: 50%;
+        }
+        
+        .left-column img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .right-column {
+            float: left;
+            width: 45%;
+            padding-left: 20px;
+        }
+        
+        .right-column h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .right-column p {
+            margin-bottom: 20px;
+            color: #555;
+        }
+        
+        .btn {
+            background-color: #ff6200;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        /* Info Section */
+        .info-section {
+            background-color: #0f0f0f;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .info-section h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .info-section p {
+            font-size: 16px;
+        }
+        
+        /* Map and Form Section */
+        .map-form-section {
+            overflow: hidden;
+            padding: 40px 20px;
+        }
+        
+        .map-column {
+            float: left;
+            width: 50%;
+        }
+        
+        .map-column img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .form-column {
+            float: right;
+            width: 45%;
+            padding-left: 20px;
+        }
+        
+        .form-column h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        
+        .form-column p {
+            margin-bottom: 20px;
+            color: #555;
+        }
+        
+        .form-column form {
+            width: 100%;
+        }
+        
+        .form-column input,
+        .form-column textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        
+        .form-column textarea {
+            height: 100px;
+            resize: none;
+        }
+        
+        .form-column .btn {
+            width: 25%;
+        }
+        
+        /* Footer */
+        
+        .footer {
+            background-color: #111111;
+      color: white;
+      text-align: center;
+      padding: 15px;
+          }
+        
+    </style>
+</head>
+<body>
+    <!-- Header -->
+
+        <header class="navbar">
+          <div class="logo">
+            Pixel <span>Power</span>
+          </div>
+      
+          <nav class="nav-links">
+            <a href="#" class="active">Home</a>
+            <a href="#">Lectures</a>
+            <a href="#">Labs</a>
+            <a href="#">Student Work</a>
+            <a href="#">Resources</a>
+            <a href="#">Blogs</a>
+          </nav>
+      
+          <button class="contact-btn">Contact</button>
+        </header>
+
+    <!-- Main Section -->
+    <section class="main-content">
+        <div class="left-column">
+            <img src="c:\Users\Lap Tech\AppData\Local\Temp\5cf6d51e-3ad2-44ba-adca-efb70f59fc97_Task 2 Assets.zip.c97\Task 2 Assets\hero-image.jpg" alt="Students working on laptops">
+        </div>
+        <div class="right-column">
+            <h1>Welcome to OUR <br>Class Web Portal</h1>
+            <p>This site is part of the learning journey in web development. Here, students learn, design, and build forms, responsive design, and contribute to this portal.</p>
+            <button class="btn"  style="border-radius: 50px;">StartExploring</button>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section class="info-section">
+        <h2>This isn't just a website -- it's a learning journey.</h2>
+        <p>Here, students document what they learn and build.</p>
+    </section>
+
+    <!-- Map and Form Section -->
+    <section class="map-form-section">
+        <div class="map-column">
+            <img src="https://via.placeholder.com/300x200" alt="Map">
+        </div>
+        <div class="form-column">
+            <h3>Get in touch with the instructor?</h3>
+            <p>Have questions about your lab, or assignment? Use the form below to contact your instructor or TA. We're here to support your learning journey!</p>
+            <form>
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="number" placeholder="Number" required>
+                <textarea placeholder="Message" required></textarea>
+                <button type="submit" class="btn" style="border-radius: 8px;">Submit</button>
+            </form>
+        </div>
+        
+    </section>
+
+    <!-- Footer -->
+     
+    <div class="footer">
+        <p>© 2025 Your Website. All rights reserved.</p>
+      </div>
+   
+</body>
+</html>
+
+    
