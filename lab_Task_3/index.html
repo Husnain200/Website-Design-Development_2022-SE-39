@@ -1,0 +1,833 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Client Ramp</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    
+    body {
+      color: #1b1e2c;
+      line-height: 1.6;
+    }
+    
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    .flex {
+      display: flex;
+      align-items: center;
+    }
+    
+    .space-between {
+      justify-content: space-between;
+    }
+    
+    .space-around {
+      justify-content: space-around;
+    }
+    
+    .header {
+      padding: 15px 0;
+      border-bottom: 1px solid #ddd;
+    }
+    
+    .logo {
+      height: 40px;
+    }
+    
+    .nav-links a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #1b1e2c;
+      font-weight: 500;
+    }
+    
+    .nav-links .btn {
+      margin-left: 20px;
+    }
+    
+    .btn {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    
+    .btn.orange {
+      background: #f7931e;
+      color: white;
+    }
+    
+    .btn.blue {
+      background: #007bff;
+      color: white;
+    }
+    .main{
+
+     
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+            url('./home-banner-bg.webp') no-repeat center center;
+background-size: cover;
+    }
+    .hero {
+    
+  height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+    
+    
+    .overlay {
+      background-color:linear-gradient(rgba(18, 75, 182, 0.733), rgba(0, 0, 0, 0.6));
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .hero .text-center {
+      text-align: center;
+    }
+    
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    
+    .hero .highlight {
+      color: #5bbcff;
+    }
+    
+    .hero p {
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+    }
+    
+    .hero .btn-group {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+    
+    .hero .note {
+      font-size: 0.9rem;
+      margin-top: 10px;
+    }
+    
+    .stats {
+      background: #5bbcff;
+      color: white;
+      padding: 40px 0;
+    }
+    
+    .stats h2 {
+      font-size: 2rem;
+    }
+    
+    .stats p {
+      margin-top: 5px;
+      font-size: 1rem;
+    }
+    
+    .features {
+      padding: 60px 0;
+      gap: 40px;
+    }
+    
+    .features .left {
+      flex: 1;
+    }
+    
+    .features .right {
+      flex: 1;
+    }
+    
+    .features h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+    
+    .features p {
+      margin-bottom: 20px;
+    }
+    
+    .features ul {
+      margin-bottom: 20px;
+      list-style: disc inside;
+    }
+    
+    .project-image {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    /* Feature Sections */
+.feature-section {
+  padding: 60px 0;
+}
+
+.feature-row {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.feature-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.feature-image {
+  flex: 1;
+  max-width: 50%;
+}
+
+.feature-image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.feature-content {
+  flex: 1;
+  max-width: 45%;
+}
+
+.feature-content h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.feature-content p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.feature-content a {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.feature-content ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.white-bg {
+  background-color: #ffffff;
+}
+
+.blue-bg {
+  background-color: #f0f8ff;
+}
+
+/* Button (already declared, repeating for clarity) */
+.btn.blue {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #000;
+}
+
+.section {
+  padding: 60px 20px;
+}
+
+.light-blue {
+  background-color: #e9f5ff;
+}
+
+.white {
+  background-color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+.text-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.text-content h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.text-content p {
+  margin-bottom: 15px;
+}
+
+.text-content ul {
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.text-content ul li {
+  list-style-type: disc;
+  margin-bottom: 8px;
+}
+
+.feature-img {
+  flex: 1;
+  max-width: 550px;
+  height: auto;
+  min-width: 300px;
+}
+
+.btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.support-items {
+  margin-top: 40px;
+}
+
+.support-box {
+  max-width: 300px;
+  text-align: center;
+}
+
+.support-box img {
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.footer {
+  background-color: #3da8f5;
+  color: white;
+  padding: 60px 20px 30px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-top {
+  margin-bottom: 40px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 20px;
+}
+
+.logo-col .logo {
+  width: 150px;
+}
+
+.links-col ul li {
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.address-col p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.social-icons a img {
+  width: 24px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.review-text {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  margin-bottom: 30px;
+}
+
+.footer-bottom p {
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.partner-logos img {
+  height: 32px;
+  margin: 0 15px;
+}
+.plans-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 60px 20px;
+  background-color: #f5faff;
+  gap: 30px;
+}
+
+.plan-card {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 30px;
+  width: 300px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.plan-card:hover {
+  transform: translateY(-10px);
+}
+
+.plan-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #007bff;
+}
+
+.plan-price {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.plan-feature-title {
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.plan-features {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.plan-features li {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+.order-btn {
+  display: block;
+  margin: auto;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.order-btn:hover {
+  background-color: #0056b3;
+}
+
+
+.plans-title , .plans-subtitle {
+  text-align: center;
+}
+  </style>
+</head>
+<body>
+
+  <div class="main">
+    <!-- Header -->
+  <header class="header">
+   
+    <div class="container flex space-between">
+      <img src="./logo-client-ramp1.webp" alt="Client Ramp Logo" class="logo"/>
+      <nav class="nav-links">
+        
+        <a href="#">Support</a>
+        <a href="#">FAQ</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Sign In</a>
+        <button class="btn orange">Get Started Now</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="overlay">
+      <div class="container text-center">
+        <h1>Manage Your <span class="highlight">Clients and Projects</span></h1>
+        <p>All-in-One CRM, Project Management and Client Relationship Tools.</p>
+        <div class="btn-group">
+          <button class="btn orange">Get Started Now</button>
+          <button class="btn blue">Sign In</button>
+        </div>
+        <p class="note">No credit card required to get started!</p>
+      </div>
+    </div>
+  </section>
+  </div>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="container flex space-around">
+      <div><h2>2,486</h2><p>Subscribers</p></div>
+      <div><h2>645,089</h2><p>Open Projects</p></div>
+      <div><h2>152,834</h2><p>Finished Projects</p></div>
+      <div><h2>32,392</h2><p>Project Members</p></div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features container flex">
+    <div class="left">
+      <h2>Manage Projects</h2>
+      <p>
+        Stay organized with an extended platform for project creation, task assignments, and deadline tracking.
+      </p>
+      <h3>Key Features</h3>
+      <ul>
+        <li>Assign tasks to team members.</li>
+        <li>Manage milestones and timely delivery.</li>
+        <li>Keep your clients informed and updated.</li>
+      </ul>
+      <button class="btn blue">Get Started Now</button>
+    </div>
+    <div class="right">
+      <img src="./manage-projects.webp" alt="Project Board Screenshot" class="project-image"/>
+    </div>
+  </section>
+  <section class="feature-section white-bg">
+    <div class="container flex feature-row">
+      <div class="feature-image">
+        <img src="./manage-clients.webp" alt="Manage Clients Image" />
+      </div>
+      <div class="feature-content">
+        <h2>Manage Clients</h2>
+        <p>
+          Easily add, update, and <a href="#">track client details</a> for any stage of a project with seamless communication.
+        </p>
+        <h3>Key Features</h3>
+        <ul>
+          <li>Track contact details, project history, and invoices.</li>
+          <li>Manage reminders, calls, and notes.</li>
+          <li>Share client details with your team securely.</li>
+        </ul>
+        <button class="btn blue">Get Started Now</button>
+      </div>
+    </div>
+  </section>
+<!-- Section: Manage Quotations -->
+<section class="feature-section blue-bg">
+  <div class="container flex feature-row reverse">
+    <div class="feature-image">
+      <img src="./manage-qoutations.webp" alt="Manage Quotations Image" />
+    </div>
+    <div class="feature-content">
+      <h2>Manage Quotations</h2>
+      <p>
+        <a href="#">Create and track project quotes</a> with ease by organizing your project quotations.
+      </p>
+      <h3>Key Features</h3>
+      <ul>
+        <li>Generate customizable PDFs.</li>
+        <li>Monitor quote statuses and approvals.</li>
+        <li>Simplify follow-ups for better deal closures.</li>
+      </ul>
+      <button class="btn blue">Get Started Now</button>
+    </div>
+  </div>
+</section>
+<!-- Section: Manage Invoices -->
+<section class="feature-section white-bg">
+  <div class="container flex feature-row">
+    <div class="feature-image">
+      <img src="./manage-invoices.webp" alt="Manage Invoices Image" />
+    </div>
+    <div class="feature-content">
+      <h2>Manage Invoices</h2>
+      <p>
+        Simplify billing processes and get paid faster by managing <a href="#">project invoices</a> efficiently.
+      </p>
+      <h3>Key Features</h3>
+      <ul>
+        <li>Create branded invoices with your branding.</li>
+        <li>Integrate real-time payment tracking.</li>
+        <li>Integrate with your QuickBooks account.</li>
+      </ul>
+      <button class="btn blue">Get Started Now</button>
+    </div>
+  </div>
+</section>  
+
+<!-- Section 1: Administration -->
+<section class="section light-blue">
+  <div class="container flex row-reverse">
+    <img src="./adminstration.webp" alt="Administration Image" class="feature-img" />
+    <div class="text-content">
+      <h2>Administration</h2>
+      <p>Take control of managing user settings, user permissions, subscriptions and system security.</p>
+      <h4>Key Features</h4>
+      <ul>
+        <li>Set access roles and permissions</li>
+        <li>Manage subscriptions and billing preferences</li>
+        <li>Assign or sync business groups</li>
+      </ul>
+      <button class="btn">Get Started Now</button>
+    </div>
+  </div>
+</section>
+
+<!-- Section 2: Messaging and Video -->
+<section class="section white">
+  <div class="container flex">
+    <img src="./manage-video.webp" alt="Messaging and Video Image" class="feature-img" />
+    <div class="text-content">
+      <h2>Messaging and Video</h2>
+      <p>Improve client communication with real-time, secure inbuilt messaging and video tools.</p>
+      <h4>Key Features</h4>
+      <ul>
+        <li>Chat and file sharing</li>
+        <li>Internal or external messaging</li>
+        <li>One-click video or audio meetings</li>
+      </ul>
+      <button class="btn">Get Started Now</button>
+    </div>
+  </div>
+</section>
+
+<!-- Section 3: Our Support -->
+<section class="section white">
+  <div class="container center-text">
+    <h2>Our Support</h2>
+    <div class="support-items flex space-around">
+      <div class="support-box">
+        <img src="./noun-support-4831710.webp" alt="Support Icon" />
+        <h4>Support When You Need It</h4>
+        <p>Get assistance whenever you run into issues with your project or platform.</p>
+      </div>
+      <div class="support-box">
+        <img src="./noun-assistance-6762704.webp" alt="Assistance Icon" />
+        <h4>Personalized Assistance</h4>
+        <p>Receive human-centric help articles and tailored support resources.</p>
+      </div>
+      <div class="support-box">
+        <img src="./noun-24hr-helpline-3309604.webp" alt="Anytime Icon" />
+        <h4>Available Anytime</h4>
+        <p>24/7/365 response no matter your business timezone or location.</p>
+      </div>
+    </div>
+  </div>
+
+  <section class="plans-section">
+    <div class="plans-container">
+      <h2 class="plans-title">Subscription Plan</h2>
+      <p class="plans-subtitle">Choose the Perfect Plan for Your Business</p>
+
+      <div class="plans-wrapper">
+        <!-- Trial Plan -->
+        <div class="plan-card">
+          <h3 class="plan-name">Trial Plan</h3>
+          <p class="plan-price">Price: $0/month</p>
+          <p class="plan-feature-title">Features</p>
+          <ul class="plan-features">
+            <li>Manage up to 5 clients.</li>
+            <li>Access to basic project management tools.</li>
+            <li>Create and send up to 5 quotes per month.</li>
+            <li>Generate up to 5 invoices per month.</li>
+            <li>Limited chat functionality (basic messaging only).</li>
+            <li>Basic reporting and analytics.</li>
+            <li>Community support.</li>
+          </ul>
+          <button class="order-btn">Order Now</button>
+        </div>
+
+        <!-- Starter Plan -->
+        <div class="plan-card">
+          <h3 class="plan-name">Starter Plan</h3>
+          <p class="plan-price">Price: $20/month</p>
+          <p class="plan-feature-title">Features</p>
+          <ul class="plan-features">
+            <li>Manage up to 100 clients.</li>
+            <li>Access all project management features, including task assignment and deadline tracking.</li>
+            <li>Unlimited quotes and invoices.</li>
+            <li>Integration with PayPal and QuickBooks.</li>
+            <li>Full chat functionality (including file sharing and voice calls).</li>
+            <li>Advanced reporting and analytics.</li>
+            <li>Email support.</li>
+          </ul>
+          <button class="order-btn">Order Now</button>
+        </div>
+
+        <!-- Pro Plan -->
+        <div class="plan-card">
+          <h3 class="plan-name">Pro Plan</h3>
+          <p class="plan-price">Price: $50/month</p>
+          <p class="plan-feature-title">Features</p>
+          <ul class="plan-features">
+            <li>Manage up to 500 clients.</li>
+            <li>All features from the Starter Plan.</li>
+            <li>Customizable workflows and templates.</li>
+            <li>Mobile app access with real-time sync.</li>
+            <li>Priority email and chat support.</li>
+            <li>Data export capabilities (CSV/PDF).</li>
+            <li>Team performance insights and advanced analytics.</li>
+          </ul>
+          <button class="order-btn">Order Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-top container flex space-between">
+    <!-- Logo Column -->
+    <div class="footer-column logo-col">
+      <img src="./logo-client-ramp1.webp" alt="Client Ramp Logo" class="logo" />
+    </div>
+
+    <!-- Links Column -->
+    <div class="footer-column links-col">
+      <ul>
+        <li><a href="#">Get Started Now</a></li>
+        <li><a href="#">Sign In</a></li>
+        <li><a href="#">Support</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Address + Social Column -->
+    <div class="footer-column address-col">
+      <p>9105 Tryon Village Drive Suite 303 #27 Cary, NC 27518</p>
+      <div class="social-icons">
+        <a href="#"><img src="./FB.png" alt="Facebook" /></a>
+        <a href="#"><img src="./LI.jpeg" alt="LinkedIn" /></a>
+        <a href="#"><img src="./YT.png" alt="YouTube" /></a>
+        <a href="#"><img src="./TW.png" alt="Twitter" /></a>
+        <a href="#"><img src="./P.jpeg" alt="Pinterest" /></a>
+      </div>
+      <p class="review-text">Write us a review at: <br/>
+        SourceForge, Capterra, G2, Product Hunt, Slashdot, Crozdesk and Trustpilot.
+      </p>
+    </div>
+  </div>
+
+  <hr />
+
+  <div class="footer-bottom container">
+    <p>&copy; 2025 ClientRamp – All rights reserved. Use of this website constitutes acceptance of our Subscription Agreement, User Agreement, Privacy Policy and Cookie Policy. ClientRamp trademarks, product names, logos and other marks and designs are trademarks of OrganicRankings.com, LLC or its subsidiaries and may not be used without permission.</p>
+
+    <div class="partner-logos flex center">
+      <img src="./capterra.png" alt="Capterra" />
+      <img src="./producthunt.png" alt="Product Hunt" />
+      <img src="./g2crowd.png" alt="Crowd" />
+      <img src="./techradar.png" alt="TechRadar" />
+      <img src="./sourceforge.png" alt="SourceForge" />
+    </div>
+  </div>
+</footer>
+
+      </body>
+      
+      </html>
+    
