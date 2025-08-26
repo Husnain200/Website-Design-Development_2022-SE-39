@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rectangle Path Animation</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: white;
+    }
+
+    .box {
+      position: relative;
+      width: 400px;   /* rectangle width */
+      height: 300px;  /* rectangle height */
+    }
+
+    .shape {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      background-color: peru; /* skin brown */
+      border-radius: 20px;
+      animation: moveAndMorph 10s infinite linear;
+    }
+
+    @keyframes moveAndMorph {
+      /* Start - bottom left (rounded square, skin brown) */
+      0% {
+        top: 220px; left: 0;
+        background-color: peru;
+        width: 80px; height: 80px;
+        border-radius: 20px;
+      }
+
+      /* Move right (circle, brown red) */
+      25% {
+        top: 220px; left: 320px;
+        background-color: firebrick;
+        width: 80px; height: 80px;
+        border-radius: 50%;
+      }
+
+      /* Move up (rectangle, dark purple) */
+      50% {
+        top: 0; left: 320px;
+        background-color: darkmagenta;
+        width: 120px; height: 60px;
+        border-radius: 15px;
+      }
+
+      /* Move left (circle, green) */
+      75% {
+        top: 0; left: 0;
+        background-color: green;
+        width: 80px; height: 80px;
+        border-radius: 50%;
+      }
+
+      /* Move down back to start (rectangle, sea green) */
+      100% {
+        top: 220px; left: 0;
+        background-color: seagreen;
+        width: 100px; height: 60px;
+        border-radius: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="shape"></div>
+  </div>
+</body>
+</html>

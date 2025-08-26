@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bouncing Balls Animation</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+    }
+
+    .container {
+      display: flex;
+      gap: 40px; /* space between balls */
+    }
+
+    .ball {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      animation: bounce 1.2s infinite ease-in-out;
+    }
+
+    .red {
+      background-color: red;
+      animation-delay: 0s;
+    }
+
+    .green {
+      background-color: green;
+      animation-delay: 0.2s;
+    }
+
+    .blue {
+      background-color: darkblue;
+      animation-delay: 0.4s;
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-80px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="ball red"></div>
+    <div class="ball green"></div>
+    <div class="ball blue"></div>
+  </div>
+</body>
+</html>
