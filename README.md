@@ -4,3 +4,4 @@ https://raw.githack.com/Husnain200/Website-Design-Development_2022-SE-39/main/la
 https://raw.githack.com/Husnain200/Website-Design-Development_2022-SE-39/main/lab_Task_3/index.html
 https://raw.githack.com/Husnain200/Website-Design-Development_2022-SE-39/tree/main/lab_task_04%20grids
 https://raw.githack.com/Husnain200/Website-Design-Development_2022-SE-39/main/Lab%20Task%204/Lab%20task4.html
+https://raw.githack.com/Husnain200/Website-Design-Development_2022-SE-39/main/Lab_Task_5/lab%20-5.html
