@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Create Your Account</h1>
+        <form id="validationForm" novalidate>
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Max 3 characters">
+                <span class="input-icon">✓</span>
+                <div class="error-message">First name must be maximum 3 characters</div>
+                <div class="success-message">Perfect!</div>
+            </div>
+
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Max 10 characters">
+                <span class="input-icon">✓</span>
+                <div class="error-message">Last name must be maximum 10 characters</div>
+                <div class="success-message">Looks good!</div>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="123-456-7890 or 1234567890">
+                <span class="input-icon">✓</span>
+                <div class="error-message">Please enter a valid phone number (123-456-7890 or 1234567890)</div>
+                <div class="success-message">Valid phone number!</div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com">
+                <span class="input-icon">✓</span>
+                <div class="error-message">Please enter a valid email address</div>
+                <div class="success-message">Valid email!</div>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter strong password">
+                <span class="input-icon">✓</span>
+                <div class="password-requirements">
+                    <div class="requirement" id="length">Minimum 8 characters</div>
+                    <div class="requirement" id="uppercase">At least 1 uppercase letter</div>
+                    <div class="requirement" id="lowercase">At least 1 lowercase letter</div>
+                    <div class="requirement" id="digit">At least 1 digit</div>
+                    <div class="requirement" id="special">At least 1 special character (!@#$%^&*)</div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Re-enter password">
+                <span class="input-icon">✓</span>
+                <div class="error-message">Passwords do not match</div>
+                <div class="success-message">Passwords match!</div>
+            </div>
+
+            <button type="submit" id="submitBtn" disabled>Submit Form</button>
+
+            <div id="submissionMessage" class="submission-message"></div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
