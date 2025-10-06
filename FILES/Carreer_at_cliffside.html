@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cliffside | Career</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="assets/BookConsulatation2.webp" />
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" media="all" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" media="all" />
+  </head>
+  <body class="bg-white">
+       <!-- Mobile Sidebar -->
+       <!-- Mobile Sidebar -->
+    <div
+      id="mobile-sidebar-overlay"
+      class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden transition-opacity duration-300 md:hidden"
+    ></div>
+
+    <div
+      id="mobile-sidebar"
+      class="fixed top-0 left-0 h-full w-80 bg-white shadow-xl z-50 transform -translate-x-full transition-transform duration-300 ease-in-out md:hidden overflow-y-auto"
+    >
+      <!-- Sidebar Header -->
+      <div
+        class="flex items-center justify-between p-6 border-b border-gray-200"
+      >
+        <div class="flex items-center gap-3">
+          <img
+            src="assets/Group.webp"
+            alt="Cliffside Icon"
+            class="h-8 w-auto object-contain"
+            loading="lazy"
+          />
+          <img
+            src="assets/CliffsideLogo.webp"
+            alt="Cliffside Logo"
+            class="h-5 w-auto object-contain"
+            loading="lazy"
+          />
+        </div>
+        <button
+          id="mobile-sidebar-close"
+          class="p-2 rounded-lg hover:bg-gray-100 transition-colors"
+        >
+          <svg
+            class="h-6 w-6 text-gray-600"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Navigation Menu -->
+      <div class="p-6">
+        <nav class="space-y-6">
+          <!-- How We Work -->
+          <a
+            href="OurWork.html"
+            class="block text-gray-900 font-medium text-base hover:text-[#02B578] transition-colors py-2"
+          >
+            How We Work
+          </a>
+
+          <!-- Services Dropdown -->
+          <div class="space-y-2">
+            <button
+              id="mobile-services-toggle"
+              class="flex items-center justify-between w-full text-gray-900 font-medium text-base hover:text-[#02B578] transition-colors py-2"
+            >
+              Services
+              <svg
+                id="mobile-services-chevron"
+                class="h-5 w-5 text-gray-500 transition-transform duration-200"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+            <div
+              id="mobile-services-menu"
+              class="hidden pl-4 space-y-3 border-l-2 border-gray-100"
+            >
+              <a
+                href="#"
+                class="block text-gray-600 hover:text-[#02B578] transition-colors py-1 text-sm"
+              >
+                Security Assessment
+              </a>
+              <a
+                href="#"
+                class="block text-gray-600 hover:text-[#02B578] transition-colors py-1 text-sm"
+              >
+                Penetration Testing
+              </a>
+              <a
+                href="#"
+                class="block text-gray-600 hover:text-[#02B578] transition-colors py-1 text-sm"
+              >
+                Compliance Consulting
+              </a>
+              <a
+                href="#"
+                class="block text-gray-600 hover:text-[#02B578] transition-colors py-1 text-sm"
+              >
+                Incident Response
+              </a>
+              <a
+                href="#"
+                class="block text-gray-600 hover:text-[#02B578] transition-colors py-1 text-sm"
+              >
+                Cybersecurity Advisory
+              </a>
+              <a
+                href="#"
+                class="block text-gray-600 hover:text-[#02B578] transition-colors py-1 text-sm"
+              >
+                Security Architecture
+              </a>
+              <a
+                href="#"
+                class="block text-gray-600 hover:text-[#02B578] transition-colors py-1 text-sm"
+              >
+                Cloud Security
+              </a>
+              <a
+                href="#"
+                class="block text-gray-600 hover:text-[#02B578] transition-colors py-1 text-sm"
+              >
+                Security Awareness
+              </a>
+            </div>
+          </div>
+
+          <!-- Industries Dropdown -->
+          <div class="space-y-2">
+            <button
+              id="mobile-industries-toggle"
+              class="flex items-center justify-between w-full text-gray-900 font-medium text-base hover:text-[#02B578] transition-colors py-2"
+            >
+              Industries
+              <svg
+                id="mobile-industries-chevron"
+                class="h-5 w-5 text-gray-500 transition-transform duration-200"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+            <div
+              id="mobile-industries-menu"
+              class="hidden pl-4 space-y-3 border-l-2 border-gray-100"
+            >
+              <a
+                href="Carreer_at_cliffside.html"
+                class="block text-gray-600 hover:text-[#02B578] transition-colors py-1 text-sm"
+              >
+                Carreer at CliffSide
+              </a>
+              <a
+                href="our_Success_stories.html"
+                class="block text-gray-600 hover:text-[#02B578] transition-colors py-1 text-sm"
+              >
+                Our Success Stories
+              </a>
+              <a
+                href="#"
+                class="block text-gray-600 hover:text-[#02B578] transition-colors py-1 text-sm"
+              >
+                Technology
+              </a>
+              <a
+                href="#"
+                class="block text-gray-600 hover:text-[#02B578] transition-colors py-1 text-sm"
+              >
+                Manufacturing
+              </a>
+              <a
+                href="#"
+                class="block text-gray-600 hover:text-[#02B578] transition-colors py-1 text-sm"
+              >
+                Retail
+              </a>
+              <a
+                href="#"
+                class="block text-gray-600 hover:text-[#02B578] transition-colors py-1 text-sm"
+              >
+                Government
+              </a>
+              <a
+                href="#"
+                class="block text-gray-600 hover:text-[#02B578] transition-colors py-1 text-sm"
+              >
+                Education
+              </a>
+            </div>
+          </div>
+
+          <!-- Additional Navigation Links -->
+          <div class="pt-4 border-t border-gray-200 space-y-4">
+            <a
+              href="#"
+              class="block text-gray-900 font-medium text-base hover:text-[#02B578] transition-colors py-2"
+            >
+              Case Studies
+            </a>
+            <a
+              href="#"
+              class="block text-gray-900 font-medium text-base hover:text-[#02B578] transition-colors py-2"
+            >
+              Blog
+            </a>
+            <a
+              href="#"
+              class="block text-gray-900 font-medium text-base hover:text-[#02B578] transition-colors py-2"
+            >
+              About Us
+            </a>
+            <a
+              href="#"
+              class="block text-gray-900 font-medium text-base hover:text-[#02B578] transition-colors py-2"
+            >
+              Contact
+            </a>
+          </div>
+
+          <!-- CTA Button -->
+          <div class="pt-6">
+            <button
+              class="w-full bg-[#02B578] hover:bg-[#02B578]/90 text-white font-semibold px-6 py-3 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl"
+            >
+              <a href="book_a_free_consultation.html">Book Free Consultation</a>
+            </button>
+          </div>
+
+          <!-- Contact Information -->
+          <div class="pt-6 border-t border-gray-200 space-y-4">
+            <div class="flex items-center gap-3">
+              <div
+                class="w-10 h-10 bg-[#02B578]/10 rounded-lg flex items-center justify-center"
+              >
+                <svg
+                  class="w-5 h-5 text-[#02B578]"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <p class="text-sm font-medium text-gray-900">(02) 8916 6389</p>
+                <p class="text-xs text-gray-500">Call us directly</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <div
+                class="w-10 h-10 bg-[#02B578]/10 rounded-lg flex items-center justify-center"
+              >
+                <svg
+                  class="w-5 h-5 text-[#02B578]"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <p class="text-sm font-medium text-gray-900">
+                  Sydney, Australia
+                </p>
+                <p class="text-xs text-gray-500">Level 1, 66 King Street</p>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Single NavBar Display with Dropdown -->
+    <nav class="bg-white shadow-sm border-b border-gray-100 sticky top-0 z-40">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="relative flex items-center justify-between h-[100px]">
+          <!-- Left Section: Logo -->
+          <div class="flex-shrink-0 flex items-center gap-4">
+            <img
+              src="assets/Group.webp"
+              alt="Cliffside Icon"
+              class="h-[48px] w-auto object-contain"
+              loading="lazy"
+            />
+            <a href="index.html" class="block">
+              <img
+                src="assets/CliffsideLogo.webp"
+                alt="Cliffside Logo"
+                class="h-[25px] w-auto object-contain"
+                loading="lazy"
+              />
+            </a>
+          </div>
+
+          <!-- Center Section: Desktop Navigation -->
+          <div
+            class="hidden md:flex absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+          >
+            <div class="flex items-baseline space-x-8">
+              <a
+                href="OurWork.html"
+                class="text-black hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors duration-200 font-[var(--main-font)]"
+              >
+                How We Work
+              </a>
+              <!-- Services Dropdown -->
+              <div class="relative group">
+                <button
+                  class="text-black hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors duration-200 flex items-center font-[var(--main-font)]"
+                >
+                  Services
+                  <svg
+                    class="ml-1 h-4 w-4 transition-transform duration-200 group-hover:rotate-180"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    ></path>
+                  </svg>
+                </button>
+                <div
+                  class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border border-gray-200"
+                >
+                  <div class="py-1">
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors duration-150"
+                      >Security Assessment</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors duration-150"
+                      >Penetration Testing</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors duration-150"
+                      >Compliance Consulting</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors duration-150"
+                      >Incident Response</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- Industries Dropdown -->
+              <div class="relative group">
+                <button
+                  class="text-black hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors duration-200 flex items-center font-[var(--main-font)]"
+                >
+                  Industries
+                  <svg
+                    class="ml-1 h-4 w-4 transition-transform duration-200 group-hover:rotate-180"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    ></path>
+                  </svg>
+                </button>
+                <div
+                  class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border border-gray-200"
+                >
+                  <div class="py-1">
+                    <a
+                      href="Carreer_at_cliffside.html"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors duration-150"
+                      >Carreer at CliffSide</a
+                    >
+                    <a
+                      href="our_Success_stories.html"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors duration-150"
+                      >Our Success Stories</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors duration-150"
+                      >Technology</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors duration-150"
+                      >Manufacturing</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors duration-150"
+                      >Retail</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Section: CTA and Mobile Menu Button -->
+          <div class="flex items-center">
+            <!-- Desktop CTA -->
+            <div class="hidden md:block ml-4">
+              <button
+                class="bg-transparent border border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white px-6 py-2 rounded-full text-sm font-medium transition-all duration-200"
+              >
+                <a href="book_a_free_consultation.html">Book Free Consultation</a>
+              </button>
+            </div>
+            <!-- Mobile menu button -->
+            <div class="md:hidden flex items-center">
+              <button
+                id="mobile-sidebar-toggle"
+                class="p-2 rounded-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 focus:outline-none transition-colors"
+                aria-label="Toggle mobile menu"
+              >
+                <svg
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Careers At Cliffside Cybersecurity Section -->
+
+      <section class="w-full bg-white py-8 md:py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-12">
+          <!-- Left: Text Content -->
+          <div class="flex-1 w-full mb-10 md:mb-0 order-2 md:order-1 flex flex-col justify-center">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-6 sm:mb-8 leading-tight text-left">Careers At Cliffside<br>Cybersecurity</h1>
+            <p class="text-gray-700 text-base sm:text-lg mb-6 sm:mb-8 max-w-xl text-left">We’re always scouting for emerging and seasoned talent to enhance our team’s strength in protecting the digital world.</p>
+            <div class="mb-6 sm:mb-8 text-left">
+              <p class="text-gray-900 mb-4">If you:</p>
+              <ul class="space-y-4">
+                <li class="flex items-start gap-3">
+                  <img src="assets/bullet.webp" alt="bullet" class="h-5 w-5 sm:h-6 sm:w-6 mt-1" />
+                  <span class="text-gray-900 text-sm sm:text-base">have a passion and constructive curiosity for cybersecurity,</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <img src="assets/bullet.webp" alt="bullet" class="h-5 w-5 sm:h-6 sm:w-6 mt-1" />
+                  <span class="text-gray-900 text-sm sm:text-base">take ownership in the trust bestowed to us by our clients, and;</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <img src="assets/bullet.webp" alt="bullet" class="h-5 w-5 sm:h-6 sm:w-6 mt-1" />
+                  <span class="text-gray-900 text-sm sm:text-base">a drive to excel in this dynamic field</span>
+                </li>
+              </ul>
+              <p class="text-gray-700 mt-4 sm:mt-6">... please regularly review our current vacancies below!</p>
+            </div>
+          </div>
+          <!-- Right: Featured Image -->
+          <div class="flex-1 w-full flex justify-center items-center order-1 md:order-2">
+            <img src="assets/CarreerAtCliffside.webp" alt="Careers At Cliffside" class="w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl object-cover" />
+          </div>
+        </div>
+      </section>
+    <!-- Jobs Section -->
+
+      <section class="w-full bg-white py-8 md:py-10">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-10 sm:mb-16">Join us in shaping a secure digital future</h2>
+          <div class="space-y-0 divide-y divide-gray-200">
+            <!-- Job Card 1 -->
+            <div class="flex flex-col sm:flex-row items-center justify-between py-6 sm:py-10">
+              <span class="text-base sm:text-xl font-semibold text-black" style="font-family: 'var(--main-font)', sans-serif;">Senior Security Architect</span>
+              <button class="mt-4 sm:mt-0 bg-[#FFF455] text-black font-semibold px-8 sm:px-12 py-3 rounded-full shadow-[0_0_24px_0_rgba(255,244,85,0.7)] transition-all text-base sm:text-lg">Apply Now</button>
+            </div>
+            <!-- Job Card 2 -->
+            <div class="flex flex-col sm:flex-row items-center justify-between py-6 sm:py-10">
+              <span class="text-base sm:text-xl font-semibold text-black" style="font-family: 'var(--main-font)', sans-serif;">Senior Security Architect</span>
+              <button class="mt-4 sm:mt-0 bg-[#FFF455] text-black font-semibold px-8 sm:px-12 py-3 rounded-full shadow-[0_0_24px_0_rgba(255,244,85,0.7)] transition-all text-base sm:text-lg">Apply Now</button>
+            </div>
+            <!-- Job Card 3 -->
+            <div class="flex flex-col sm:flex-row items-center justify-between py-6 sm:py-10">
+              <span class="text-base sm:text-xl font-semibold text-black" style="font-family: 'var(--main-font)', sans-serif;">Senior Security Architect</span>
+              <button class="mt-4 sm:mt-0 bg-[#FFF455] text-black font-semibold px-8 sm:px-12 py-3 rounded-full shadow-[0_0_24px_0_rgba(255,244,85,0.7)] transition-all text-base sm:text-lg">Apply Now</button>
+            </div>
+          </div>
+          <div class="flex justify-center mt-10 sm:mt-20">
+            <button class="border border-gray-900 text-black font-semibold px-8 sm:px-10 py-3 rounded-full transition-all text-base sm:text-lg" style="font-family: 'var(--main-font)', sans-serif;">View All Jobs</button>
+          </div>
+        </div>
+      </section>
+
+    <!-- Why Choose Cliffside Section -->
+   <section class="bg-white py-16 md:py-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Header -->
+        <div class="text-center mb-16">
+          <h2
+            class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6"
+          >
+            Why Choose Cliffside Security?
+          </h2>
+        </div>
+
+        <!-- Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+          <!-- Card 1: Cybersecurity That Ignores Business Reality -->
+          <div
+            class="bg-white rounded-lg p-8 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group"
+          >
+            <div class="rounded-lg p-4 w-fit mb-6">
+              <img
+                src="assets/DynamicWork.webp"
+                alt="Dynamic Work Environment icon"
+                class="w-12 h-12"
+              />
+            </div>
+            <h3 class="text-xl font-[500] text-gray-900 mb-4">
+                      Dynamic Work Environment
+            </h3>
+            <p class="text-gray-500 text-sm font-light leading-relaxed">
+             Experience the thrill of working in a fast-paced and ever-evolving industry.
+            </p>
+          </div>
+
+          <!-- Card 2:     Creative Solutions -->
+          <div
+            class="bg-white rounded-lg p-8 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group"
+          >
+            <div class="rounded-lg p-4 w-fit mb-6">
+              <img
+                src="assets/CreativeIdeas.webp"
+                alt="Creative Ideas Icon"
+                class="w-12 h-12"
+              />
+            </div>
+            <h3 class="text-xl font-[500] text-gray-900 mb-4">
+              Creative Solutions
+            </h3>
+            <p class="text-gray-500 text-sm font-light leading-relaxed">
+             Join a team that encourages innovation and creativity to tackle complex security challenges.
+            </p>
+          </div>
+
+          <!-- Card 3: Diversity and Inclusion -->
+          <div
+            class="bg-white rounded-lg p-8 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group"
+          >
+            <div class="rounded-lg p-4 w-fit mb-6">
+              <img
+                src="assets/Diversity&inclusion.webp"
+                alt="Diversity & inclusion icon"
+                class="w-12 h-12"
+              />
+            </div>
+            <h3 class="text-xl font-[500] text-gray-900 mb-4">
+              Diversity and Inclusion
+            </h3>
+            <p class="text-gray-500 text-sm font-light leading-relaxed">
+              Embrace diversity and collaborate with colleagues from diverse backgrounds and perspectives.
+          </div>
+
+          <!-- Card 4:Friendly Culture -->
+          <div
+            class="bg-white rounded-lg p-8 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group"
+          >
+            <div class="rounded-lg p-4 w-fit mb-6">
+              <img
+                src="assets/FriendlyCulture.webp"
+                alt="Friendly Culture Icon"
+                class="w-12 h-12"
+              />
+            </div>
+            <h3 class="text-xl font-[500] text-gray-900 mb-4">
+              Friendly Culture
+            </h3>
+            <p class="text-gray-500 text-sm font-light leading-relaxed">
+            Enjoy a supportive and inclusive work culture where teamwork and mutual respect are valued.
+            </p>
+          </div>
+
+          <!-- Card 5: Nice Work Environment -->
+          <div
+            class="bg-white rounded-lg p-8 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group"
+          >
+            <div class="rounded-lg p-4 w-fit mb-6">
+              <img
+                src="assets/NiceWork.webp"
+                alt="Nice Work Environment Icon"
+                class="w-12 h-12"
+              />
+            </div>
+            <h3 class="text-xl font-[500] text-gray-900 mb-4">
+                 Nice Work Environment
+            </h3>
+            <p class="text-gray-500 text-sm font-light leading-relaxed">
+              Work in modern offices with state-of-the-art facilities and amenities.
+            </p>
+          </div>
+
+          <!-- Card 6:Professional Growth -->
+          <div
+            class="bg-white rounded-lg p-8 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group"
+          >
+            <div class="rounded-lg p-4 w-fit mb-6">
+              <img
+                src="assets/ProfessionalGrowth.webp"
+                alt="Professional Growth Icon"
+                class="w-12 h-12"
+              />
+            </div>
+            <h3 class="text-xl font-[500] text-gray-900 mb-4">
+                  Professional Growth
+            </h3>
+            <p class="text-gray-500 text-sm font-light leading-relaxed">
+              Access opportunities for professional development and career advancement.
+            </p>
+          </div>
+
+          <!-- Card 7: Impactful Work -->
+          <div
+            class="bg-white rounded-lg p-8 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group"
+          >
+            <div class="rounded-lg p-4 w-fit mb-6">
+              <img
+                src="assets/ImpactfulWork.webp"
+                alt="Impactful Work Icon"
+                class="w-12 h-12"
+              />
+            </div>
+            <h3 class="text-xl font-[500] text-gray-900 mb-4">
+                  Impactful Work
+            </h3>
+            <p class="text-gray-500 text-sm font-light leading-relaxed">
+             Make a meaningful impact by contributing to the security and resilience of businesses worldwide.
+            </p>
+          </div>
+          
+          <!-- Card 8: Work-Life Balance -->
+          <div
+            class="bg-white rounded-lg p-8 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group"
+          >
+            <div class="rounded-lg p-4 w-fit mb-6">
+              <img
+                src="assets/Work-life-Blance.webp"
+                alt="Work Life Balance Icon"
+                class="w-12 h-12"
+              />
+            </div>
+            <h3 class="text-xl font-[500] text-gray-900 mb-4">
+               Work-Life Balance
+            </h3>
+            <p class="text-gray-500 text-sm font-light leading-relaxed">
+           Maintain a healthy work-life balance with flexible work arrangements and wellness programs.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ResponsiveFooter  -->
+    <footer class="bg-white">
+      <!-- Main Footer Content -->
+      <div
+        class="w-full px-4 sm:px-6 px-2 lg:px-16 xl:px-20 py-12 lg:py-[100px]"
+      >
+        <div
+          class="grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-30 justify-center"
+        >
+          <!-- Column 1: Brand and Contact -->
+          <div class="md:col-span-1">
+            <div
+              class="flex-shrink-0 flex items-center gap-4 md:gap-2 lg:gap-2 mb-5 md:mb-24"
+            >
+              <img
+                src="assets/Group.webp"
+                alt="Cliffside Icon"
+                class="h-[48px] w-auto object-contain"
+                loading="lazy"
+              />
+              <a href="index.html" class="block">
+                <img
+                  src="assets/CliffsideLogo.webp"
+                  alt="Cliffside Logo"
+                  class="h-[25px] w-auto object-contain"
+                  loading="lazy"
+                />
+              </a>
+            </div>
+
+            <div class="space-y-5">
+              <div class="flex items-center gap-2">
+                <svg
+                  class="w-4 h-4 text-[#02B578]"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                  />
+                </svg>
+                <span class="text-gray-600 text-sm"
+                  >Level 1, 66 King Street Sydney</span
+                >
+              </div>
+              <div class="flex items-center gap-2">
+                <svg
+                  class="w-4 h-4 text-[#02B578]"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+                  />
+                </svg>
+                <span class="text-gray-600 text-sm">(02) 8916 6389</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="md:col-span-2 grid grid-col-1 sm:grid-cols-3 gap-8 lg:gap-12"
+          >
+            <!-- Column 2: Contact Us -->
+            <div class="lg:col-span-1">
+              <h4
+                class="text-lg font-bold text-gray-900 mb-4 font-[var(--main-font)]"
+              >
+                <a href="book_a_free_consultation.html">Contact Us</a>
+              </h4>
+              <ul class="space-y-5">
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-600 hover:text-gray-900 text-sm transition-colors"
+                    >Placeholder Only</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-600 hover:text-gray-900 text-sm transition-colors"
+                    >Case Studies</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="cliffside_blogs.html"
+                    class="text-gray-600 hover:text-gray-900 text-sm transition-colors"
+                    >Blog Post</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-600 hover:text-gray-900 text-sm transition-colors"
+                    >FAQs</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-600 hover:text-gray-900 text-sm transition-colors"
+                    >Support Team</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Column 3: Follow Us -->
+            <div class="lg:col-span-1">
+              <h4
+                class="text-lg font-bold text-gray-900 mb-4 font-[var(--main-font)]"
+              >
+                Follow Us
+              </h4>
+              <ul class="space-y-5">
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-600 hover:text-gray-900 text-sm transition-colors"
+                    >Placeholder Only</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-600 hover:text-gray-900 text-sm transition-colors"
+                    >Twitter Feed</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-600 hover:text-gray-900 text-sm transition-colors"
+                    >Facebook Group</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-600 hover:text-gray-900 text-sm transition-colors"
+                    >YouTube Channel</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-600 hover:text-gray-900 text-sm transition-colors"
+                    >Instagram Profile</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Column 4: Get Update -->
+            <div class="lg:col-span-1">
+              <h4
+                class="text-lg font-bold text-gray-900 mb-4 font-[var(--main-font)]"
+              >
+                Get Update
+              </h4>
+              <ul class="space-y-5">
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-600 hover:text-gray-900 text-sm transition-colors"
+                    >Placeholder Only</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-600 hover:text-gray-900 text-sm transition-colors"
+                    >Special Offers</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-600 hover:text-gray-900 text-sm transition-colors"
+                    >Event Alert</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-600 hover:text-gray-900 text-sm transition-colors"
+                    >Webinars Info</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-600 hover:text-gray-900 text-sm transition-colors"
+                    >Resource Library</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Column 5: Newsletter Subscription -->
+          <div class="md:col-span-1">
+            <h4
+              class="text-lg font-bold text-gray-900 mb-4 font-[var(--main-font)]"
+            >
+              Get Update
+            </h4>
+            <p class="text-gray-600 text-sm mb-4">
+              Subscribe to our newsletter for the latest insights and updates.
+            </p>
+
+            <div class="space-y-3">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#02B578] focus:border-transparent"
+              />
+              <button
+                class="w-full bg-[#FFF455] hover:bg-[#FFF455]/90 text-gray-900 font-bold py-2 px-4 rounded-lg transition-all duration-300"
+              >
+                Join
+              </button>
+              <p class="text-gray-500 text-xs">
+                By joining, you consent to our Privacy Policy and receive
+                updates.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- jQuery + Owl Carousel (CDN) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" defer></script>
+    <script src="script.js" defer></script>
+  </body>
+</html>

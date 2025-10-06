@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cliffside | Success Stories</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="assets/BookConsulatation2.webp" />
+    <!-- Owl Carousel CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      media="all"
+    />
+  </head>
+  <body class="bg-white">
+       <!-- Mobile Sidebar -->
+    <div
+      id="mobile-sidebar-overlay"
+      class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden transition-opacity duration-300 md:hidden"
+    ></div>
+
+    <div
+      id="mobile-sidebar"
+      class="fixed top-0 left-0 h-full w-80 bg-white shadow-xl z-50 transform -translate-x-full transition-transform duration-300 ease-in-out md:hidden overflow-y-auto"
+    >
+      <!-- Sidebar Header -->
+      <div
+        class="flex items-center justify-between p-6 border-b border-gray-200"
+      >
+        <div class="flex items-center gap-3">
+          <img
+            src="assets/Group.webp"
+            alt="Cliffside Icon"
+            class="h-8 w-auto object-contain"
+            loading="lazy"
+          />
+          <img
+            src="assets/CliffsideLogo.webp"
+            alt="Cliffside Logo"
+            class="h-5 w-auto object-contain"
+            loading="lazy"
+          />
+        </div>
+        <button
+          id="mobile-sidebar-close"
+          class="p-2 rounded-lg hover:bg-gray-100 transition-colors"
+        >
+          <svg
+            class="h-6 w-6 text-gray-600"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Navigation Menu -->
+      <div class="p-6">
+        <nav class="space-y-6">
+          <!-- How We Work -->
+          <a
+            href="OurWork.html"
+            class="block text-gray-900 font-medium text-base hover:text-[#02B578] transition-colors py-2"
+          >
+            How We Work
+          </a>
+
+          <!-- Services Dropdown -->
+          <div class="space-y-2">
+            <button
+              id="mobile-services-toggle"
+              class="flex items-center justify-between w-full text-gray-900 font-medium text-base hover:text-[#02B578] transition-colors py-2"
+            >
+              Services
+              <svg
+                id="mobile-services-chevron"
+                class="h-5 w-5 text-gray-500 transition-transform duration-200"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+            <div
+              id="mobile-services-menu"
+              class="hidden pl-4 space-y-3 border-l-2 border-gray-100"
+            >
+              <a
+                href="#"
+                class="block text-gray-600 hover:text-[#02B578] transition-colors py-1 text-sm"
+              >
+                Security Assessment
+              </a>
+              <a
+                href="#"
+                class="block text-gray-600 hover:text-[#02B578] transition-colors py-1 text-sm"
+              >
+                Penetration Testing
+              </a>
+              <a
+                href="#"
+                class="block text-gray-600 hover:text-[#02B578] transition-colors py-1 text-sm"
+              >
+                Compliance Consulting
+              </a>
+              <a
+                href="#"
+                class="block text-gray-600 hover:text-[#02B578] transition-colors py-1 text-sm"
+              >
+                Incident Response
+              </a>
+              <a
+                href="#"
+                class="block text-gray-600 hover:text-[#02B578] transition-colors py-1 text-sm"
+              >
+                Cybersecurity Advisory
+              </a>
+              <a
+                href="#"
+                class="block text-gray-600 hover:text-[#02B578] transition-colors py-1 text-sm"
+              >
+                Security Architecture
+              </a>
+              <a
+                href="#"
+                class="block text-gray-600 hover:text-[#02B578] transition-colors py-1 text-sm"
+              >
+                Cloud Security
+              </a>
+              <a
+                href="#"
+                class="block text-gray-600 hover:text-[#02B578] transition-colors py-1 text-sm"
+              >
+                Security Awareness
+              </a>
+            </div>
+          </div>
+
+          <!-- Industries Dropdown -->
+          <div class="space-y-2">
+            <button
+              id="mobile-industries-toggle"
+              class="flex items-center justify-between w-full text-gray-900 font-medium text-base hover:text-[#02B578] transition-colors py-2"
+            >
+              Industries
+              <svg
+                id="mobile-industries-chevron"
+                class="h-5 w-5 text-gray-500 transition-transform duration-200"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+            <div
+              id="mobile-industries-menu"
+              class="hidden pl-4 space-y-3 border-l-2 border-gray-100"
+            >
+              <a
+                href="Carreer_at_cliffside.html"
+                class="block text-gray-600 hover:text-[#02B578] transition-colors py-1 text-sm"
+              >
+                Carreer at CliffSide
+              </a>
+              <a
+                href="our_Success_stories.html"
+                class="block text-gray-600 hover:text-[#02B578] transition-colors py-1 text-sm"
+              >
+                Our Success Stories
+              </a>
+              <a
+                href="#"
+                class="block text-gray-600 hover:text-[#02B578] transition-colors py-1 text-sm"
+              >
+                Technology
+              </a>
+              <a
+                href="#"
+                class="block text-gray-600 hover:text-[#02B578] transition-colors py-1 text-sm"
+              >
+                Manufacturing
+              </a>
+              <a
+                href="#"
+                class="block text-gray-600 hover:text-[#02B578] transition-colors py-1 text-sm"
+              >
+                Retail
+              </a>
+              <a
+                href="#"
+                class="block text-gray-600 hover:text-[#02B578] transition-colors py-1 text-sm"
+              >
+                Government
+              </a>
+              <a
+                href="#"
+                class="block text-gray-600 hover:text-[#02B578] transition-colors py-1 text-sm"
+              >
+                Education
+              </a>
+            </div>
+          </div>
+
+          <!-- Additional Navigation Links -->
+          <div class="pt-4 border-t border-gray-200 space-y-4">
+            <a
+              href="#"
+              class="block text-gray-900 font-medium text-base hover:text-[#02B578] transition-colors py-2"
+            >
+              Case Studies
+            </a>
+            <a
+              href="#"
+              class="block text-gray-900 font-medium text-base hover:text-[#02B578] transition-colors py-2"
+            >
+              Blog
+            </a>
+            <a
+              href="#"
+              class="block text-gray-900 font-medium text-base hover:text-[#02B578] transition-colors py-2"
+            >
+              About Us
+            </a>
+            <a
+              href="#"
+              class="block text-gray-900 font-medium text-base hover:text-[#02B578] transition-colors py-2"
+            >
+              Contact
+            </a>
+          </div>
+
+          <!-- CTA Button -->
+          <div class="pt-6">
+            <button
+              class="w-full bg-[#02B578] hover:bg-[#02B578]/90 text-white font-semibold px-6 py-3 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl"
+            >
+              <a href="book_a_free_consultation.html">Book Free Consultation</a>
+            </button>
+          </div>
+
+          <!-- Contact Information -->
+          <div class="pt-6 border-t border-gray-200 space-y-4">
+            <div class="flex items-center gap-3">
+              <div
+                class="w-10 h-10 bg-[#02B578]/10 rounded-lg flex items-center justify-center"
+              >
+                <svg
+                  class="w-5 h-5 text-[#02B578]"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <p class="text-sm font-medium text-gray-900">(02) 8916 6389</p>
+                <p class="text-xs text-gray-500">Call us directly</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <div
+                class="w-10 h-10 bg-[#02B578]/10 rounded-lg flex items-center justify-center"
+              >
+                <svg
+                  class="w-5 h-5 text-[#02B578]"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <p class="text-sm font-medium text-gray-900">
+                  Sydney, Australia
+                </p>
+                <p class="text-xs text-gray-500">Level 1, 66 King Street</p>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Single NavBar Display with Dropdown -->
+    <nav class="bg-white shadow-sm border-b border-gray-100 sticky top-0 z-40">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="relative flex items-center justify-between h-[100px]">
+          <!-- Left Section: Logo -->
+          <div class="flex-shrink-0 flex items-center gap-4">
+            <img
+              src="assets/Group.webp"
+              alt="Cliffside Icon"
+              class="h-[48px] w-auto object-contain"
+              loading="lazy"
+            />
+            <a href="index.html" class="block">
+              <img
+                src="assets/CliffsideLogo.webp"
+                alt="Cliffside Logo"
+                class="h-[25px] w-auto object-contain"
+                loading="lazy"
+              />
+            </a>
+          </div>
+
+          <!-- Center Section: Desktop Navigation -->
+          <div
+            class="hidden md:flex absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+          >
+            <div class="flex items-baseline space-x-8">
+              <a
+                href="OurWork.html"
+                class="text-black hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors duration-200 font-[var(--main-font)]"
+              >
+                How We Work
+              </a>
+              <!-- Services Dropdown -->
+              <div class="relative group">
+                <button
+                  class="text-black hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors duration-200 flex items-center font-[var(--main-font)]"
+                >
+                  Services
+                  <svg
+                    class="ml-1 h-4 w-4 transition-transform duration-200 group-hover:rotate-180"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    ></path>
+                  </svg>
+                </button>
+                <div
+                  class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border border-gray-200"
+                >
+                  <div class="py-1">
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors duration-150"
+                      >Security Assessment</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors duration-150"
+                      >Penetration Testing</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors duration-150"
+                      >Compliance Consulting</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors duration-150"
+                      >Incident Response</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- Industries Dropdown -->
+              <div class="relative group">
+                <button
+                  class="text-black hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors duration-200 flex items-center font-[var(--main-font)]"
+                >
+                  Industries
+                  <svg
+                    class="ml-1 h-4 w-4 transition-transform duration-200 group-hover:rotate-180"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    ></path>
+                  </svg>
+                </button>
+                <div
+                  class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border border-gray-200"
+                >
+                  <div class="py-1">
+                    <a
+                      href="Carreer_at_cliffside.html"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors duration-150"
+                      >Carreer at CliffSide</a
+                    >
+                    <a
+                      href="our_Success_stories.html"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors duration-150"
+                      >Our Success Stories</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors duration-150"
+                      >Technology</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors duration-150"
+                      >Manufacturing</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors duration-150"
+                      >Retail</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Section: CTA and Mobile Menu Button -->
+          <div class="flex items-center">
+            <!-- Desktop CTA -->
+            <div class="hidden md:block ml-4">
+              <button
+                class="bg-transparent border border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white px-6 py-2 rounded-full text-sm font-medium transition-all duration-200"
+              >
+                <a href="book_a_free_consultation.html">Book Free Consultation</a>
+              </button>
+            </div>
+            <!-- Mobile menu button -->
+            <div class="md:hidden flex items-center">
+              <button
+                id="mobile-sidebar-toggle"
+                class="p-2 rounded-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 focus:outline-none transition-colors"
+                aria-label="Toggle mobile menu"
+              >
+                <svg
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section
+      class="relative w-full min-h-[320px] md:min-h-[400px] flex flex-col justify-center items-center text-center"
+      style="
+        background: url('assets/OurSucesssHero.webp') center center / cover
+          no-repeat;
+      "
+    >
+      <div
+        class="relative z-10 w-full flex flex-col items-center justify-center py-10 sm:py-16 md:py-24"
+      >
+        <h1
+          class="text-white text-2xl sm:text-3xl md:text-5xl font-bold mb-4 sm:mb-6 drop-shadow-lg leading-tight max-w-2xl sm:max-w-3xl md:max-w-4xl mx-auto"
+        >
+          Trusted by companies<br class="md:hidden" />
+          across Australia
+        </h1>
+        <div
+          class="flex flex-wrap justify-center items-center gap-8 sm:gap-14 md:gap-20 mt-6 sm:mt-8 w-full px-2 sm:px-6"
+        >
+          <!-- Responsive company logos -->
+          <img
+            src="assets/amp.webp"
+            alt="AMP"
+            class="h-12 sm:h-16 md:h-20 lg:h-28 w-auto object-contain"
+          />
+          <img
+            src="assets/arm_hub.webp"
+            alt="ARM HUB"
+            class="h-12 sm:h-16 md:h-20 lg:h-28 w-auto object-contain"
+          />
+          <img
+            src="assets/great_soutern_bank.webp"
+            alt="Great Southern Bank"
+            class="h-12 sm:h-16 md:h-20 lg:h-28 w-auto object-contain"
+          />
+          <img
+            src="assets/hourigan.webp"
+            alt="Housman International"
+            class="h-12 sm:h-16 md:h-20 lg:h-28 w-auto object-contain"
+          />
+          <img
+            src="assets/wesFarmer.webp"
+            alt="Wesfarmers"
+            class="h-12 sm:h-16 md:h-20 lg:h-28 w-auto object-contain"
+          />
+          <img
+            src="assets/NSW.webp"
+            alt="NSW Government"
+            class="h-12 sm:h-16 md:h-20 lg:h-28 w-auto object-contain"
+          />
+          <img
+            src="assets/WesternAustraliaUni.webp"
+            alt="Western Sydney"
+            class="h-12 sm:h-16 md:h-20 lg:h-28 w-auto object-contain"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- Cybersecurity success story-1 Section with contact button -->
+    <section class="w-full bg-white py-12 md:py-20">
+      <div
+        class="max-w-6xl mx-auto px-4 sm:px-8 flex flex-col md:flex-row items-center gap-10 md:gap-16"
+      >
+        <!-- Left: Text Content -->
+        <div
+          class="flex-1 w-full mb-10 md:mb-0 order-1 md:order-none flex flex-col"
+        >
+          <div class="mb-4">
+            <span
+              class="inline-block bg-[#E6FAF2] text-[#02B578] px-5 py-2 rounded-full text-sm font-medium"
+              >Business Name Success Story</span
+            >
+          </div>
+          <h2
+            class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight"
+          >
+            Lorem Ipsum<br />Headline Placeholder
+          </h2>
+          <p class="text-gray-500 text-base sm:text-lg mb-4 max-w-lg">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <p class="text-gray-500 text-sm sm:text-base mb-8 max-w-lg">
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+          </p>
+          <!-- Image: mobile only, after paragraphs, before cards/button -->
+          <div class="block md:hidden mb-8">
+            <img
+              src="assets/cybersecurity.webp"
+              alt="Cybersecurity"
+              class="w-full max-w-xs sm:max-w-sm rounded-xl shadow-lg object-cover mx-auto"
+            />
+          </div>
+          <div class="flex flex-col sm:flex-row gap-4 mb-8">
+            <div
+              class="flex-1 bg-gray-100 rounded-xl shadow px-6 py-6 flex flex-col items-center justify-center"
+            >
+              <div class="text-2xl font-bold text-gray-900 mb-1">100%</div>
+              <div class="text-gray-500 text-xs sm:text-sm text-center">
+                Compliance lorem ipsum
+              </div>
+            </div>
+            <div
+              class="flex-1 bg-gray-100 rounded-xl shadow px-6 py-6 flex flex-col items-center justify-center"
+            >
+              <div class="text-2xl font-bold text-gray-900 mb-1">75%</div>
+              <div class="text-gray-500 text-xs sm:text-sm text-center">
+                Reduced Cost lorem ipsum
+              </div>
+            </div>
+          </div>
+          <div class="mb-8">
+            <a
+              href="book_a_free_consultation.html"
+              class="inline-block bg-[#FFF455] hover:bg-[#FFE066] text-black font-semibold px-10 py-2 rounded-full shadow-lg transition-all duration-300"
+              >Contact Us</a
+            >
+          </div>
+        </div>
+        <!-- Right: Image (desktop only) -->
+        <div
+          class="flex-1 w-full flex justify-center items-center order-2 md:order-none hidden md:flex"
+        >
+          <img
+            src="assets/cybersecurity.webp"
+            alt="Cybersecurity"
+            class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl rounded-xl shadow-lg object-cover"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Slider Section -->
+    <section class="bg-[#02B578] text-white py-16 md:py-24">
+      <div class="max-w-5xl mx-auto px-6 sm:px-8 lg:px-10 relative">
+        <div class="testimonial-carousel owl-carousel owl-theme">
+          <!-- Slide 1 -->
+          <div class="item">
+            <div class="text-center max-w-3xl mx-auto">
+              <div class="flex justify-center">
+                <div
+                  class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/10"
+                >
+                  <span class="text-3xl leading-none">“</span>
+                </div>
+              </div>
+              <p class="mt-6 text-white/95 leading-8">
+                The ongoing security awareness campaigns have greatly improved
+                our staff's understanding of cybersecurity, drastically reducing
+                phishing incidents. The regular third-party assessments give us
+                peace of mind, ensuring our systems stay secure and aligned with
+                best practices. Cliffside Cybersecurity support has been
+                invaluable in strengthening our cybersecurity posture.
+              </p>
+              <div class="mt-8 flex flex-col items-center gap-2">
+                <img
+                  src="assets/DirectorHashicorp.webp"
+                  alt="Director"
+                  class="director-avatar"
+                />
+                <div class="text-[13px] md:text-sm font-semibold">
+                  Business Operations Director
+                </div>
+                <div class="text-[11px] md:text-xs opacity-90">
+                  International HR Organisation
+                </div>
+                <img
+                  src="assets/HashiCorp.webp"
+                  alt="HashiCorp"
+                  class="company-logo mt-4"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="item">
+            <div class="text-center max-w-3xl mx-auto">
+              <div class="flex justify-center">
+                <div
+                  class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/10"
+                >
+                  <span class="text-3xl leading-none">“</span>
+                </div>
+              </div>
+              <p class="mt-6 text-white/95 leading-8">
+                Cliffside identified several hidden risks and helped us
+                prioritise remediation without disrupting operations. Their
+                practical approach and clear communication made a measurable
+                difference to our security posture.
+              </p>
+              <div class="mt-8 flex flex-col items-center gap-2">
+                <img
+                  src="assets/DirectorHashicorp.webp"
+                  alt="Director"
+                  class="director-avatar"
+                />
+                <div class="text-[13px] md:text-sm font-semibold">
+                  Technology Lead
+                </div>
+                <div class="text-[11px] md:text-xs opacity-90">
+                  FinTech Company
+                </div>
+                <img
+                  src="assets/HashiCorp.webp"
+                  alt="HashiCorp"
+                  class="company-logo mt-4"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="item">
+            <div class="text-center max-w-3xl mx-auto">
+              <div class="flex justify-center">
+                <div
+                  class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/10"
+                >
+                  <span class="text-3xl leading-none">“</span>
+                </div>
+              </div>
+              <p class="mt-6 text-white/95 leading-8">
+                Their penetration testing and follow-up assurance gave us clear,
+                actionable insights. We fixed high-risk issues quickly and
+                improved our compliance readiness ahead of schedule.
+              </p>
+              <div class="mt-8 flex flex-col items-center gap-2">
+                <img
+                  src="assets/DirectorHashicorp.webp"
+                  alt="Director"
+                  class="director-avatar"
+                />
+                <div class="text-[13px] md:text-sm font-semibold">
+                  Head of IT Security
+                </div>
+                <div class="text-[11px] md:text-xs opacity-90">
+                  Healthcare Provider
+                </div>
+                <img
+                  src="assets/HashiCorp.webp"
+                  alt="HashiCorp"
+                  class="company-logo mt-4"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cybersecurity success story-2 Section with contact button -->
+    <section class="w-full bg-white py-12 md:py-20">
+      <div
+        class="max-w-6xl mx-auto px-4 sm:px-8 flex flex-col md:flex-row items-center gap-10 md:gap-16"
+      >
+        <!-- left part: Image (desktop only) -->
+        <div
+          class="flex-1 w-full flex justify-center items-center order-2 md:order-none hidden md:flex"
+        >
+          <img
+            src="assets/cybericon2.webp"
+            alt="Cybersecurity"
+            class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl rounded-xl shadow-lg object-cover"
+          />
+        </div>
+        <!-- right part: Text Content -->
+        <div
+          class="flex-1 w-full mb-10 md:mb-0 order-1 md:order-none flex flex-col"
+        >
+          <div class="mb-4">
+            <span
+              class="inline-block bg-[#E6FAF2] text-[#02B578] px-5 py-2 rounded-full text-sm font-medium"
+              >Business Name Success Story</span
+            >
+          </div>
+          <h2
+            class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight"
+          >
+            Lorem Ipsum<br />Headline Placeholder
+          </h2>
+          <p class="text-gray-500 text-base sm:text-lg mb-4 max-w-lg">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <p class="text-gray-500 text-sm sm:text-base mb-8 max-w-lg">
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+          </p>
+          <!-- Image: mobile only, after paragraphs, before cards/button -->
+          <div class="block md:hidden mb-8">
+            <img
+              src="assets/cybericon2.webp"
+              alt="Cybersecurity"
+              class="w-full max-w-xs sm:max-w-sm rounded-xl shadow-lg object-cover mx-auto"
+            />
+          </div>
+          <div class="flex flex-col sm:flex-row gap-4 mb-8">
+            <div
+              class="flex-1 bg-gray-100 rounded-xl shadow px-6 py-6 flex flex-col items-center justify-center"
+            >
+              <div class="text-2xl font-bold text-gray-900 mb-1">100%</div>
+              <div class="text-gray-500 text-xs sm:text-sm text-center">
+                Compliance lorem ipsum
+              </div>
+            </div>
+            <div
+              class="flex-1 bg-gray-100 rounded-xl shadow px-6 py-6 flex flex-col items-center justify-center"
+            >
+              <div class="text-2xl font-bold text-gray-900 mb-1">75%</div>
+              <div class="text-gray-500 text-xs sm:text-sm text-center">
+                Reduced Cost lorem ipsum
+              </div>
+            </div>
+          </div>
+          <div class="mb-8">
+            <a
+              href="book_a_free_consultation.html"
+              class="inline-block bg-[#FFF455] hover:bg-[#FFE066] text-black font-semibold px-10 py-2 rounded-full shadow-lg transition-all duration-300"
+              >Contact Us</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Slider Section -->
+    <section class="bg-[#02B578] text-white py-16 md:py-24">
+      <div class="max-w-5xl mx-auto px-6 sm:px-8 lg:px-10 relative">
+        <div class="testimonial-carousel owl-carousel owl-theme">
+          <!-- Slide 1 -->
+          <div class="item">
+            <div class="text-center max-w-3xl mx-auto">
+              <div class="flex justify-center">
+                <div
+                  class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/10"
+                >
+                  <span class="text-3xl leading-none">“</span>
+                </div>
+              </div>
+              <p class="mt-6 text-white/95 leading-8">
+                The ongoing security awareness campaigns have greatly improved
+                our staff's understanding of cybersecurity, drastically reducing
+                phishing incidents. The regular third-party assessments give us
+                peace of mind, ensuring our systems stay secure and aligned with
+                best practices. Cliffside Cybersecurity support has been
+                invaluable in strengthening our cybersecurity posture.
+              </p>
+              <div class="mt-8 flex flex-col items-center gap-2">
+                <img
+                  src="assets/DirectorHashicorp.webp"
+                  alt="Director"
+                  class="director-avatar"
+                />
+                <div class="text-[13px] md:text-sm font-semibold">
+                  Business Operations Director
+                </div>
+                <div class="text-[11px] md:text-xs opacity-90">
+                  International HR Organisation
+                </div>
+                <img
+                  src="assets/HashiCorp.webp"
+                  alt="HashiCorp"
+                  class="company-logo mt-4"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="item">
+            <div class="text-center max-w-3xl mx-auto">
+              <div class="flex justify-center">
+                <div
+                  class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/10"
+                >
+                  <span class="text-3xl leading-none">“</span>
+                </div>
+              </div>
+              <p class="mt-6 text-white/95 leading-8">
+                Cliffside identified several hidden risks and helped us
+                prioritise remediation without disrupting operations. Their
+                practical approach and clear communication made a measurable
+                difference to our security posture.
+              </p>
+              <div class="mt-8 flex flex-col items-center gap-2">
+                <img
+                  src="assets/DirectorHashicorp.webp"
+                  alt="Director"
+                  class="director-avatar"
+                />
+                <div class="text-[13px] md:text-sm font-semibold">
+                  Technology Lead
+                </div>
+                <div class="text-[11px] md:text-xs opacity-90">
+                  FinTech Company
+                </div>
+                <img
+                  src="assets/HashiCorp.webp"
+                  alt="HashiCorp"
+                  class="company-logo mt-4"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="item">
+            <div class="text-center max-w-3xl mx-auto">
+              <div class="flex justify-center">
+                <div
+                  class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/10"
+                >
+                  <span class="text-3xl leading-none">“</span>
+                </div>
+              </div>
+              <p class="mt-6 text-white/95 leading-8">
+                Their penetration testing and follow-up assurance gave us clear,
+                actionable insights. We fixed high-risk issues quickly and
+                improved our compliance readiness ahead of schedule.
+              </p>
+              <div class="mt-8 flex flex-col items-center gap-2">
+                <img
+                  src="assets/DirectorHashicorp.webp"
+                  alt="Director"
+                  class="director-avatar"
+                />
+                <div class="text-[13px] md:text-sm font-semibold">
+                  Head of IT Security
+                </div>
+                <div class="text-[11px] md:text-xs opacity-90">
+                  Healthcare Provider
+                </div>
+                <img
+                  src="assets/HashiCorp.webp"
+                  alt="HashiCorp"
+                  class="company-logo mt-4"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white">
+      <!-- Main Footer Content -->
+      <div
+        class="w-full px-4 sm:px-6 px-2 lg:px-16 xl:px-20 py-12 lg:py-[100px]"
+      >
+        <div
+          class="grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-30 justify-center"
+        >
+          <!-- Column 1: Brand and Contact -->
+          <div class="md:col-span-1">
+            <div
+              class="flex-shrink-0 flex items-center gap-4 md:gap-2 lg:gap-2 mb-5 md:mb-24"
+            >
+              <img
+                src="assets/Group.webp"
+                alt="Cliffside Icon"
+                class="h-[48px] w-auto object-contain"
+                loading="lazy"
+              />
+              <a href="index.html" class="block">
+                <img
+                  src="assets/CliffsideLogo.webp"
+                  alt="Cliffside Logo"
+                  class="h-[25px] w-auto object-contain"
+                  loading="lazy"
+                />
+              </a>
+            </div>
+
+            <div class="space-y-5">
+              <div class="flex items-center gap-2">
+                <svg
+                  class="w-4 h-4 text-[#02B578]"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                  />
+                </svg>
+                <span class="text-gray-600 text-sm"
+                  >Level 1, 66 King Street Sydney</span
+                >
+              </div>
+              <div class="flex items-center gap-2">
+                <svg
+                  class="w-4 h-4 text-[#02B578]"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+                  />
+                </svg>
+                <span class="text-gray-600 text-sm">(02) 8916 6389</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="md:col-span-2 grid grid-col-1 sm:grid-cols-3 gap-8 lg:gap-12"
+          >
+            <!-- Column 2: Contact Us -->
+            <div class="lg:col-span-1">
+              <h4
+                class="text-lg font-bold text-gray-900 mb-4 font-[var(--main-font)]"
+              >
+                <a href="book_a_free_consultation.html">Contact Us</a>
+              </h4>
+              <ul class="space-y-5">
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-600 hover:text-gray-900 text-sm transition-colors"
+                    >Placeholder Only</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-600 hover:text-gray-900 text-sm transition-colors"
+                    >Case Studies</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="cliffside_blogs.html"
+                    class="text-gray-600 hover:text-gray-900 text-sm transition-colors"
+                    >Blog Post</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-600 hover:text-gray-900 text-sm transition-colors"
+                    >FAQs</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-600 hover:text-gray-900 text-sm transition-colors"
+                    >Support Team</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Column 3: Follow Us -->
+            <div class="lg:col-span-1">
+              <h4
+                class="text-lg font-bold text-gray-900 mb-4 font-[var(--main-font)]"
+              >
+                Follow Us
+              </h4>
+              <ul class="space-y-5">
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-600 hover:text-gray-900 text-sm transition-colors"
+                    >Placeholder Only</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-600 hover:text-gray-900 text-sm transition-colors"
+                    >Twitter Feed</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-600 hover:text-gray-900 text-sm transition-colors"
+                    >Facebook Group</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-600 hover:text-gray-900 text-sm transition-colors"
+                    >YouTube Channel</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-600 hover:text-gray-900 text-sm transition-colors"
+                    >Instagram Profile</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Column 4: Get Update -->
+            <div class="lg:col-span-1">
+              <h4
+                class="text-lg font-bold text-gray-900 mb-4 font-[var(--main-font)]"
+              >
+                Get Update
+              </h4>
+              <ul class="space-y-5">
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-600 hover:text-gray-900 text-sm transition-colors"
+                    >Placeholder Only</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-600 hover:text-gray-900 text-sm transition-colors"
+                    >Special Offers</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-600 hover:text-gray-900 text-sm transition-colors"
+                    >Event Alert</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-600 hover:text-gray-900 text-sm transition-colors"
+                    >Webinars Info</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-600 hover:text-gray-900 text-sm transition-colors"
+                    >Resource Library</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Column 5: Newsletter Subscription -->
+          <div class="md:col-span-1">
+            <h4
+              class="text-lg font-bold text-gray-900 mb-4 font-[var(--main-font)]"
+            >
+              Get Update
+            </h4>
+            <p class="text-gray-600 text-sm mb-4">
+              Subscribe to our newsletter for the latest insights and updates.
+            </p>
+
+            <div class="space-y-3">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#02B578] focus:border-transparent"
+              />
+              <button
+                class="w-full bg-[#FFF455] hover:bg-[#FFF455]/90 text-gray-900 font-bold py-2 px-4 rounded-lg transition-all duration-300"
+              >
+                Join
+              </button>
+              <p class="text-gray-500 text-xs">
+                By joining, you consent to our Privacy Policy and receive
+                updates.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- jQuery + Owl Carousel (CDN) -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      defer
+    ></script>
+    <script src="script.js" defer></script>
+  </body>
+</html>
