@@ -8,5 +8,6 @@ https://raw.githack.com/Husnain200/Website-Design-Development_2022-SE-39/main/La
 https://raw.githack.com/Husnain200/Website-Design-Development_2022-SE-39/tree/main/Lab_Task_06%20%20%20Bootstap
 https://raw.githack.com/Husnain200/Website-Design-Development_2022-SE-39/tree/main/Lab_task_7
 https://raw.githack.com/Husnain200/Website-Design-Development_2022-SE-39/tree/main/Lab_Task_9%20Form%20Validation
+https://raw.githack.com/Husnain200/Website-Design-Development_2022-SE-39/main/Lab_Task_10.rar
 https://raw.githack.com/Husnain200/Website-Design-Development_2022-SE-39/tree/main/Cxampphtdocsstudent_management
 https://raw.githack.com/Husnain200/Website-Design-Development_2022-SE-39/tree/main/Open_Ended_Lab
