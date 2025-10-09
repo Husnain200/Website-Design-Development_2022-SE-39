@@ -1,0 +1,139 @@
+📰 NewsHub — Live News Web Application
+👨‍💻 Developed by
+
+Name: Husnain Shafique
+Roll No: 2022-SE-39
+Department: Software Engineering
+Course: Web Development
+
+🌍 Project Overview
+
+NewsHub is a dynamic and fully responsive news web application that allows users to explore the latest global headlines from trusted news sources in real-time.
+Powered by the News API, this application fetches and displays breaking news, top stories, and user-searched articles in a visually appealing layout.
+
+The goal of this project is to demonstrate API integration, frontend design, and backend interaction using modern web development technologies such as HTML, CSS, JavaScript, and PHP.
+
+✨ Key Features
+
+✅ Fetches real-time news articles from News API
+✅ Search functionality to find news by topic or keyword (e.g., “International News”)
+✅ Displays title, description, image, and link for each article
+✅ Beautiful, responsive UI designed using Bootstrap and CSS
+✅ Dynamic content loading using JavaScript fetch requests
+✅ Backend integration (PHP) for improved data handling and security
+✅ Error handling for failed API requests or empty results
+✅ Compatible with all modern browsers and screen sizes
+
+🧠 Learning Objectives
+
+This project helped in practicing and understanding:
+
+How to fetch data from external APIs
+
+How to structure and style web content using HTML5, CSS3, and Bootstrap
+
+How to handle dynamic data rendering with JavaScript
+
+How to integrate a simple PHP backend
+
+How to maintain clean and modular code
+
+🧰 Technologies Used
+Category	Tools / Technologies
+Frontend	HTML5, CSS3, JavaScript, Bootstrap
+Backend	PHP
+API Source	News API
+
+Development Tools	Visual Studio Code, XAMPP, Chrome Developer Tools
+Version Control	Git & GitHub
+⚙️ Setup and Installation Guide
+
+Follow these steps to set up and run the project locally:
+
+1️⃣ Clone the Repository
+git clone https://github.com/your-username/NewsHub.git
+
+2️⃣ Move Project to Server Directory
+
+If using XAMPP, move the project folder into:
+
+C:\xampp\htdocs\
+
+3️⃣ Start the Server
+
+Open XAMPP Control Panel
+
+Start Apache (for PHP)
+
+4️⃣ Get Your API Key
+
+Visit https://newsapi.org/
+
+Create a free account and generate an API key
+
+Copy the API key
+
+5️⃣ Add the API Key
+
+In your app.js or backend.php, locate the section where the API call is made and replace:
+
+const apiKey = "YOUR_API_KEY_HERE";
+
+
+with your actual key.
+
+6️⃣ Run the App
+
+Open your browser and visit:
+
+http://localhost/NewsHub/
+
+7️⃣ Use the Application
+
+Type any keyword (e.g., “International News”, “Sports”, “Technology”) in the search bar
+
+Press Enter or click “Search” to fetch live articles instantly
+
+📂 Project Structure
+NewsHub/
+│
+├── index.html          # Main HTML file (Home Page)
+├── style.css           # Custom styles (includes animations and responsiveness)
+├── app.js              # JavaScript file (API integration + UI rendering)
+├── backend.php         # PHP backend for handling API requests securely
+├── assets/             # Folder for images, icons, etc.
+└── README.md           # Project documentation file
+
+💡 Future Improvements
+
+🚀 The project can be enhanced in the following ways:
+
+Add category filters (e.g., Business, Sports, Entertainment)
+
+Include dark mode / light mode toggle
+
+Enable saving favorite articles locally using localStorage or database
+
+Add user authentication to create personalized news feeds
+
+Integrate pagination or infinite scroll for smoother browsing
+
+Use database caching to reduce API requests
+
+👤 About the Developer
+
+I am Husnain Shafique, a passionate Software Engineering student dedicated to learning modern web technologies and developing practical, user-centric applications.
+This project was created as part of my Web Development Lab to showcase my understanding of:
+
+API consumption and dynamic content rendering
+
+Frontend design principles
+
+Client-server communication
+
+I aim to continue improving my skills in full-stack development, data visualization, and software architecture.
+
+🪪 License
+
+This project was developed for educational purposes as part of the Web Development Lab.
+You are free to use, modify, and distribute it for non-commercial and learning purposes.
